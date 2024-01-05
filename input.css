@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .btn{
+        @apply border border-black rounded-lg px-3 py-2 font-semibold hover:opacity-40;
+    };
+    .section-container{
+        @apply max-w-6xl px-10 mx-auto mb-12 text-center md:mb-20;
+    }
+}
+@layer base{
+    h1{ font-size: 2.5em;
+        @apply text-darkGrayishBlue font-bold md:text-5xl;
+    }
+    h2{
+        font-size: 2.1em;
+        font-weight: 500
+    }
+    h3{
+        font-size: 1.8em;
+        @apply text-darkGrayishBlue text-2xl font-bold;
+    }
+    h4{
+        font-size: 1.5em;
+        font-weight: 500
+    }
+    h5{
+        font-size: 1.2em;
+        font-weight: 500
+    }
+    h6{
+        font-size: 1em;
+        font-weight: 500
+    }
+    p{
+        @apply text-grayishBlue text-xl;
+    }
+}
